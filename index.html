@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color:gray;}
+        *{margin:0px;}
+        #nav{height:100px;width:auto;background-color:aqua;border-radius:30px;position:sticky;top:0px;animation-name:hello;animation-duration:5s;animation-iteration-count:infinite;}
+        @keyframes hello{
+            0%{background-color:rgb(235, 51, 51);}
+            20%{background-color:deepskyblue;}
+            40%{background-color:chartreuse;}
+            60%{background-color:pink;}
+            80%{background-color:Green;}
+            100%{background-color:yellow;}
+        }
+        .im1{height:75px;width:75px;border-radius:50%;float:left;margin-left:50px;padding-top:15px;}
+        .ac{display:flex;justify-content:right;gap:50px;padding-top:30px;margin-right:25px;}
+        .btn1{height:40px;width:100px;font-size:15px;background-color:rgb(84, 84, 239);border-radius:25px;}
+        #anc{color:white;text-decoration:none;}
+        button:hover{background-color:brown;}
+        #b{height:500px;width:100%;background-image:url("image10.jpg");}
+        #hd1{text-align:center;color:chartreuse;font-size:75px;padding-top:100px;}
+        #p1{text-align:center;font-size:50px;color:rgb(204, 222, 144);}
+        #btn2{height:50px;width:100px;background-color:blue;font-size:20px;border-radius:10px;}
+        #btn2:hover{background-color:brown;}
+        #anc1{color:white;text-decoration:none;}
+        .c1{display:flex;justify-content:center;gap:50px;background-image:linear-gradient(rgb(231, 57, 57),rgb(152, 238, 65),rgb(87, 87, 236));}
+        .c2{height:400px;width:auto;}
+        .im2{height:250px;width:100%;border-radius:20px;}
+        .p2{font-size:30px;color:aqua;text-align:center;}
+        .d1{display:flex;justify-content:center;gap:175px;background-image:url("sunset-7410852_1920.jpg");}
+        .d2{height:450px;width:390px;}
+        table{font-size:30px;color:aqua;}
+        input[type=text]{height:30px;width:210px;border:red solid 2px;color:red;font-size:25px;}
+        input[type=number]{height:30px;width:210px;border:red solid 2px;color:red;font-size:25px;}
+        input[type=email]{height:30px;width:210px;border:red solid 2px;color:red;font-size:25px;}
+        input[type=password]{height:30px;width:210px;border:red solid 2px;color:red;font-size:25px;}
+        input[type=reset]{height:30px;width:100px;border:red solid 2px;color:red;font-size:20px;border-radius:15px;}
+        input[type=submit]{height:30px;width:100px;border:red solid 2px;color:red;font-size:20px;border-radius:15px;}
+        .p3{font-size:30px;color:aqua;text-align:center;}
+        .p4{font-size:35px;color:aqua;text-align:center;}
+        .e1{display:flex;justify-content:center;gap:50px;height:350px;width:100%;background-image:url("image18.27.27_1061b648.jpg");align-items:center;}
+        .im3{height:150px;width:150px;border-radius:20px;}
+        .f1{height:250px;width:100%;display:flex;justify-content:center;gap:200px;background-color:black;}
+        .f2{height:250px;width:250px;}
+        .p5{font-size:20px;color:white;text-align:center;}
+        .un{color:white;}
+        .an{color:white;text-decoration:none;}
+
+             /*for laptop*/
+        @media only screen and (max-width:1160px){
+            #nav{height:95px;}
+            .im1{margin-left:10px;height:60px;width:60px;}
+            .c1{display:block;}
+            .btn1{height:30px;width:80px;font-size:12px;}
+            .ac{justify-content:center;gap:unset;gap:20px;}
+            #hd1{font-size:55px;}
+            #p1{font-size:35px;}
+            #btn2{height:40px;width:80px;font-size:15px;}
+            #b{height:400px;}
+            .im2{width:100%;height:350px;}
+            .p2{font-size:20px;}
+            .d1{display:block;}
+            .d2{height:380px;width:auto;}
+            table{font-size:20px;}
+            input[type=text]{height:25px;width:170px;font-size:20px;}
+            input[type=number]{height:25px;width:170px;font-size:20px;}
+            input[type=email]{height:25px;width:170px;font-size:20px;}
+            input[type=password]{height:25px;width:170px;font-size:20px;}
+            input[type=reset]{height:30px;width:80px;font-size:17px;border-radius:15px;}
+            input[type=submit]{height:30px;width:80px;font-size:17px;border-radius:15px;}
+            .p3{font-size:20px;}
+            .p4{font-size:30px;}
+            .e1{gap:30px;height:250px;width:auto;}
+            .im3{height:100px;width:100px;border-radius:10px;}
+            .f1{gap:50px;}
+            }
+
+        /* for tablet */
+         @media only screen and (max-width:768px){
+            #nav{height:95px;}
+            .im1{margin-left:10px;height:50px;width:50px;}
+            .c1{display:block;}
+            .btn1{height:30px;width:60px;font-size:10px;}
+            .ac{justify-content:center;gap:unset;gap:10px;}
+            #hd1{font-size:40px;}
+            #p1{font-size:25px;}
+            #btn2{height:40px;width:80px;font-size:15px;}
+            #b{height:300px;}
+            .im2{width:100%;height:300px;}
+            .p2{font-size:20px;}
+            .d1{display:block;}
+            .d2{height:350px;width:auto;}
+            table{font-size:20px;}
+            input[type=text]{height:20px;width:150px;font-size:20px;}
+            input[type=number]{height:20px;width:150px;font-size:20px;}
+            input[type=email]{height:20px;width:150px;font-size:20px;}
+            input[type=password]{height:20px;width:150px;font-size:20px;}
+            input[type=reset]{height:30px;width:80px;font-size:17px;border-radius:15px;}
+            input[type=submit]{height:30px;width:80px;font-size:17px;border-radius:15px;}
+            .p3{font-size:20px;}
+            .p4{font-size:30px;}
+            .e1{gap:10px;height:200px;width:auto;}
+            .im3{height:60px;width:60px;border-radius:10px;}
+            .f1{display:block;height:830px;width:auto;}
+            .f2{margin:auto;}
+            .f3{margin-top:30px;}
+            }
+
+                /* for mobile */
+            @media only screen and (max-width:426px){
+            #nav{height:95px;}
+            .im1{margin-left:15px;height:30px;width:30px;}
+            .c1{display:block;}
+            .btn1{height:30px;width:55px;font-size:8px;}
+            .ac{justify-content:center;gap:unset;gap:7px;}
+            #hd1{font-size:30px;}
+            #p1{font-size:20px;}
+            #btn2{height:30px;width:60px;font-size:10px;}
+            #b{height:250px;}
+            .im2{width:100%;}
+            .p2{font-size:15px;}
+            .d1{display:block;}
+            .d2{height:300px;width:auto;}
+            table{font-size:15px;}
+            input[type=text]{height:15px;width:150px;font-size:15px;}
+            input[type=number]{height:15px;width:150px;font-size:15px;}
+            input[type=email]{height:15px;width:150px;font-size:15px;}
+            input[type=password]{height:15px;width:150px;font-size:15px;}
+            input[type=reset]{height:20px;width:60px;font-size:12px;border-radius:10px;}
+            input[type=submit]{height:20px;width:60px;font-size:12px;border-radius:10px;}
+            .p3{font-size:15px;}
+            .p4{font-size:20px;}
+            .e1{gap:7px;height:170px;width:auto;}
+            .im3{height:40px;width:40px;border-radius:10px;}
+            .f1{display:block;height:850px;width:auto;}
+            .f2{margin:auto;}
+            .f3{margin-top:35px;}
+            }
+            
+    </style>
+</head>
+<body>
+     <nav id="nav">
+        <img src="logo3.png" alt="Broken Image" class="im1">
+    <div class="ac">
+        <div class="a1"><button class="btn1"><a href="" id="anc">HOME</a></button></div>
+        <div class="a2"><button class="btn1"><a href="" id="anc">About Us</a></button></div>
+        <div class="a3"><button class="btn1"><a href="" id="anc">Contact</a></button></div>
+        <div class="a4"><button class="btn1"><a href="" id="anc">Services</a></button></div>
+    </div>
+    </nav>
+    <div id="b"><p id="hd1">Hello World!</p><p id="p1">Lorem ipsum dolor sit, amet consectetur<br> adipisicing elit. Neque labore<br><button id="btn2"><a href="#6766" id="anc1">Click me</a></button></p></div>
+    <div class="c1">
+        <div class="c2"><img src="IMG-20240428-WA0003.jpg" alt="Broken Image" class="im2"><p class="p2">Lorem ipsum<br> elit. Neque laboredolor sit, amet consectetur</p></div><br>
+        <div class="c2"><img src="Fruits.jpg" alt="Broken Image" class="im2"><p class="p2">Lorem ipsum<br> elit. Neque laboredolor sit, amet consectetur</p></div><br>
+        <div class="c2"><img src="IMG-20240428-WA0005.jpg" alt="Broken Image" class="im2"><p class="p2">Lorem ipsum<br> elit. Neque laboredolor sit, amet consectetur</p></div>
+    </div>
+    <div class="d1">
+        <div class="d2">
+            <form>
+                <table>
+                    <tr>
+                        <td>First Name:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Contact No:</td>
+                        <td><input type="number"></td>
+                    </tr>
+                    <tr>
+                        <td>Email Id:</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td><input type="Password"></td>
+                     </tr>
+                    <tr>
+                        <td><input type="reset" value="Clear"></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form><br><br>
+            <p class="p3">Lorem:&nbsp;ipsum dolor sit <br>Iure fugiat odit<br> obcaecati.</p>
+        </div>
+        <div class="d2"><p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fugiat odit obcaecati est similique quis, iste ratione ex excepturi, natus officia animi enim facilis non, eos inventore. Alias, esse dignissimos.</p></div>
+    </div>
+    <div class="e1">
+        <div class="e2"><img src="apple company logo.jpeg" alt="Broken Image" class="im3"></div>
+        <div class="e2"><img src="hp logo.jpg" alt="Broken Image" class="im3"></div>
+        <div class="e2"><img src="hp1 logo.jpg" alt="Broken Image" class="im3"></div>
+        <div class="e2"><img src="logo1.jpg" alt="Broken Image" class="im3"></div>
+        <div class="e2"><img src="logo2.png" alt="Broken Image" class="im3"></div>
+        <div class="e2"><img src="microsoft logo.png" alt="Broken Image" class="im3"></div>
+    </div>
+    <div class="f1">
+        <div class="f2">
+            <p class="p5">Contact Us</p>
+            <ul class="un">
+               <li><a href="##87" class="an">Lorem ipsum dolor sit, amet</a></li>
+               <li><a href="###56" class="an">consectetur adipisicing elit.</a></li>
+               <li><a href="###75" class="an">Quasi voluptates laboriosam facere</a></li>
+               <li><a href="###6567" class="an">repudiandae sequi, mollitia aut</a></li>
+               <li><a href="###4" class="an">reprehenderit labore impedit saepe</a></li>
+               <li><a href="#6778" class="an">repudiandae voluptatibus mollitia aut</a></li>
+               <li><a href="##9787" class="an">quod nostrum praesentium distinctio?</a></li> 
+            </ul>
+        </div>
+        <div class="f2  f3">
+            <p class="p5">About Us</p>
+            <ul class="un">
+                <li><a href="##563" class="an">reprehenderit labore impedit</a></li>
+                <li><a href="###544" class="an">consectetur elit.</a></li>
+                <li><a href="###4343" class="an">Quasi voluptates laboriosam facere</a></li>
+                <li><a href="##54" class="an">repudiandae voluptatibus mollitia aut</a></li>
+                <li><a href="###565" class="an">reprehenderit labore impedit saepe</a></li>
+                <li><a href="##567" class="an">eveniet soluta voluptatibus rerum</a></li>
+                <li><a href="#455" class="an">nostrum praesentium distinctio?</a></li> 
+             </ul>
+        </div>
+        <div class="f2  f3">
+            <p class="p5">Services</p>
+            <ul class="un">
+                <li><a href="##67" class="an">eveniet soluta reprehenderit</a></li>
+                <li><a href="###562" class="an">consectetur elit.</a></li>
+                <li><a href="####45" class="an">Quasi voluptates laboriosam facere</a></li>
+                <li><a href="##865" class="an">repudiandae mollitia labore impedit aut</a></li>
+                <li><a href="###52" class="an">reprehenderit impedit saepe</a></li>
+                <li><a href="##5662" class="an">soluta voluptatibus labore impedit rerum</a></li>
+                <li><a href="#5615" class="an">laboriosam praesentium distinctio?</a></li> 
+             </ul>
+        </div>
+    </div>
+</body>
+</html>
